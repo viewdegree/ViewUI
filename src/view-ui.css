@@ -1,0 +1,12 @@
+/*
+ * @Author: viewdegree
+ * @Date: 2020-02-09 20:25:20
+ * @LastEditTime : 2020-02-09 20:39:59
+ * @LastEditors  : Please set LastEditors
+ * @Description:框架的主文件，以后使用框架的时候都会通过这个文件来引用所有的样式，所以这个文件的功能就是集成其他的样式。
+ * @FilePath: \ViewUI\src\view-ui.css
+ */
+ /* css reset */
+@import './reset.css';
+/* 公共样式 */
+@import './common.css';

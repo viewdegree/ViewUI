@@ -1,0 +1,25 @@
+/*
+ * @Author: viewdegree
+ * @Date: 2020-02-09 20:24:45
+ * @LastEditTime : 2020-02-09 20:37:53
+ * @LastEditors  : Please set LastEditors
+ * @Description: 存放项目里的公共的样式，像控制全局布局的，或者用的比较多的公共样式
+ * @FilePath: \ViewUI\src\common.css
+ */
+
+/* 屏幕宽度在340px至410px时的样式 */
+html{
+    font-size: 20px;
+}
+/* 屏幕宽度小于340px时的样式 */
+@media (max-width: 340px){
+    html{
+        font-size: 18px;
+    }    
+}
+/* 屏幕宽度大于410px时的样式 */
+@media (min-width: 410px){
+    html{
+        font-size: 22px;
+    }    
+}
