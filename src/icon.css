@@ -1,0 +1,20 @@
+/*
+ * @Author: viewdegree
+ * @Date: 2020-02-09 20:54:42
+ * @LastEditTime : 2020-02-09 21:14:48
+ * @LastEditors  : Please set LastEditors
+ * @Description: 引入font-awesome
+ * @FilePath: \ViewUI\src\icon.css
+ */
+
+
+/* 字体图标，依赖font-awesome */
+
+@import 'https://cdn.bootcss.com/font-awesome/5.11.2/css/all.min.css';
+
+/* 给图标一个水平和竖直居中的样式,覆盖了Font Awesome自带的.fa样式 */
+
+.fa {
+    display: inline-block;
+    text-align: center;
+}
