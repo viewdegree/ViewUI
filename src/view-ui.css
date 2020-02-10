@@ -1,7 +1,7 @@
 /*
  * @Author: viewdegree
  * @Date: 2020-02-09 20:25:20
- * @LastEditTime : 2020-02-10 15:37:32
+ * @LastEditTime : 2020-02-10 18:45:45
  * @LastEditors  : Please set LastEditors
  * @Description:框架的主文件，以后使用框架的时候都会通过这个文件来引用所有的样式，所以这个文件的功能就是集成其他的样式。
  * @FilePath: \ViewUI\src\view-ui.css
@@ -39,3 +39,7 @@
 /* 按钮的样式 */
 
 @import './button.css';
+
+/* 搜索栏的样式 */
+
+@import './search.css';

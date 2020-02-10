@@ -1,7 +1,7 @@
 /*
  * @Author: viewdegree
  * @Date: 2020-02-09 21:52:33
- * @LastEditTime : 2020-02-09 22:24:29
+ * @LastEditTime : 2020-02-10 22:44:51
  * @LastEditors  : Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \ViewUI\src\content.css
@@ -11,6 +11,7 @@
 /* 内容区 */
 
 .vw-content {
+    height: 100%;
     box-sizing: border-box;
     position: relative;
     overflow-y: auto;
@@ -22,6 +23,9 @@
 .vw-header~.vw-content {
     padding-top: 2.3rem;
 }
+
+
+/* 用于让内容不被搜索框覆盖 */
 
 .vw-navbar~.vw-content {
     padding-bottom: 2.5rem;

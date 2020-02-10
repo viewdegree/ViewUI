@@ -1,0 +1,165 @@
+/*
+ * @Author: viewdegree
+ * @Date: 2020-02-10 18:45:26
+ * @LastEditTime : 2020-02-10 22:12:28
+ * @LastEditors  : Please set LastEditors
+ * @Description: 搜索框设计
+ * @FilePath: \ViewUI\src\search.css
+ */
+
+
+/* 搜索框 */
+
+.vw-search {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    background: #f8f8f8;
+}
+
+
+/* 搜索状态中，覆盖内容区 */
+
+.vw-search.on-focus {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+
+/* 处理有标题栏的情况 */
+
+.vw-header~.vw-content .vw-search.on-focus {
+    top: 2.3rem;
+}
+
+
+/* 处理有导航栏的情况 */
+
+.vw-navbar~.vw-content .vw-search.on-focus {
+    bottom: 2.5rem;
+}
+
+
+/* 搜索栏中的表单 */
+
+.vw-search>.vw-search-form {
+    display: flex;
+    height: 2.3rem;
+    align-items: center;
+}
+
+
+/* 输入框的容器 */
+
+.vw-search>.vw-search-form>.vw-search-input-wrap {
+    flex: 1;
+    position: relative;
+    padding: 0 .5rem;
+}
+
+
+/* 取消按钮 */
+
+.vw-search>.vw-search-form>.vw-search-cancel {
+    flex: 0 0 2.2rem;
+    padding-right: .5rem;
+    text-align: center;
+    font-size: .7rem;
+    display: none;
+}
+
+
+/* 对取消按钮的控制 */
+
+.vw-search.on-focus>.vw-search-form>.vw-search-cancel {
+    display: block;
+}
+
+
+/* 搜索图标 */
+
+.vw-search .vw-search-icon {
+    position: absolute;
+    height: .8rem;
+    line-height: .8rem;
+    font-size: .7rem;
+    left: 1rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    color: #ccc;
+}
+
+
+/* 输入框的样式 */
+
+.vw-search .vw-search-input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 1.6rem;
+    border: none;
+    font-size: .8rem;
+    padding-left: 1.5rem;
+    background: #fff;
+    border-radius: .2rem;
+}
+
+
+/* 清空按钮的样式 */
+
+.vw-search .vw-search-clear {
+    position: absolute;
+    height: .8rem;
+    line-height: .8rem;
+    width: .8rem;
+    font-size: .6rem;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    right: 1rem;
+    border-radius: 50%;
+    color: #fff;
+    background: #ccc;
+    display: none;
+}
+
+
+/* 对清空按钮的控制 */
+
+.vw-search.on-focus .vw-search-input:valid+.vw-search-clear {
+    display: block;
+}
+
+
+/* 搜索建议 */
+
+.vw-search>.vw-search-suggest {
+    display: none;
+}
+
+.vw-search.on-focus>.vw-search-suggest {
+    display: block;
+}
+
+
+/* 搜索建议的内容 */
+
+.vw-search>.vw-search-suggest>.vw-suggest-item {
+    padding-left: 1rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: .8rem;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+.vw-search~.content {
+    padding-top: 2.3rem;
+}
