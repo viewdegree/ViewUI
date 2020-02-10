@@ -1,0 +1,41 @@
+/*
+ * @Author: viewdegree
+ * @Date: 2020-02-09 20:25:20
+ * @LastEditTime : 2020-02-10 15:37:32
+ * @LastEditors  : Please set LastEditors
+ * @Description:框架的主文件，以后使用框架的时候都会通过这个文件来引用所有的样式，所以这个文件的功能就是集成其他的样式。
+ * @FilePath: \ViewUI\src\view-ui.css
+ */
+
+
+/* css reset */
+
+@import './reset.css';
+
+/* 公共样式 */
+
+@import './common.css';
+
+/* 字体图标 */
+
+@import './icon.css';
+
+/* 标题栏样式 */
+
+@import './header.css';
+
+/* 内容区样式 */
+
+@import './content.css';
+
+/* 导航条样式 */
+
+@import './navbar.css';
+
+/* 表单样式 */
+
+@import './input.css';
+
+/* 按钮的样式 */
+
+@import './button.css';

@@ -1,0 +1,52 @@
+/*
+ * @Author: viewdegree
+ * @Date: 2020-02-09 21:52:48
+ * @LastEditTime : 2020-02-10 08:49:54
+ * @LastEditors  : Please set LastEditors
+ * @Description: 设计头部导航栏的样式
+ * @FilePath: \ViewUI\src\header.css
+ */
+
+
+/* 头部导航条 */
+
+.vw-header {
+    display: flex;
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 640px;
+    height: 2.3rem;
+    line-height: 2.3rem;
+    text-align: center;
+    top: 0;
+    z-index: 200;
+    border-bottom: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+
+/* 左侧控制栏 */
+
+.vw-header>.left {
+    flex-basis: 3.5rem;
+    flex-shrink: 0;
+}
+
+
+/* 中间标题部分 */
+
+.vw-header>.title {
+    flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/* 右侧功能区 */
+
+.vw-header>.right {
+    flex-basis: 3.5rem;
+    flex-shrink: 0;
+}

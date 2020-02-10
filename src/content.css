@@ -1,0 +1,28 @@
+/*
+ * @Author: viewdegree
+ * @Date: 2020-02-09 21:52:33
+ * @LastEditTime : 2020-02-09 22:24:29
+ * @LastEditors  : Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \ViewUI\src\content.css
+ */
+
+
+/* 内容区 */
+
+.vw-content {
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: auto;
+}
+
+
+/* 根据header和navbar自动适应内容区高度 */
+
+.vw-header~.vw-content {
+    padding-top: 2.3rem;
+}
+
+.vw-navbar~.vw-content {
+    padding-bottom: 2.5rem;
+}
