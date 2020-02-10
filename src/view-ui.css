@@ -1,7 +1,7 @@
 /*
  * @Author: viewdegree
  * @Date: 2020-02-09 20:25:20
- * @LastEditTime : 2020-02-09 22:00:41
+ * @LastEditTime : 2020-02-10 11:16:23
  * @LastEditors  : Please set LastEditors
  * @Description:框架的主文件，以后使用框架的时候都会通过这个文件来引用所有的样式，所以这个文件的功能就是集成其他的样式。
  * @FilePath: \ViewUI\src\view-ui.css
@@ -31,3 +31,7 @@
 /* 导航条样式 */
 
 @import './navbar.css';
+
+/* 表单样式 */
+
+@import './input.css';

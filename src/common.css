@@ -1,7 +1,7 @@
 /*
  * @Author: viewdegree
  * @Date: 2020-02-09 20:24:45
- * @LastEditTime : 2020-02-09 22:26:05
+ * @LastEditTime : 2020-02-10 10:49:10
  * @LastEditors  : Please set LastEditors
  * @Description: 存放项目里的公共的样式，像控制全局布局的，或者用的比较多的公共样式
  * @FilePath: \ViewUI\src\common.css
@@ -54,4 +54,41 @@ body {
     right: 0;
     background: rgba(0, 0, 0, .5);
     z-index: 200;
+}
+
+
+/* 内容分区 -- Panel 面板 */
+
+
+/* Panel 标题 */
+
+.vw-content .vw-panel-title {
+    height: 1.8rem;
+    line-height: 1.8rem;
+    padding-left: 1rem;
+    color: #aaa;
+    background: #fff;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+
+/* Panel 内容区 */
+
+.vw-content .vw-panel-body {
+    position: relative;
+    margin-bottom: .6rem;
+    padding: .6rem 1rem;
+    background: #fff;
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+
+/* 可手动设置内容区是否有内边距 */
+
+.vw-content .vw-panel-body.no-padding {
+    padding: 0;
 }
