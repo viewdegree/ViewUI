@@ -1,0 +1,115 @@
+/*
+ * @Author: viewdegree
+ * @Date: 2020-02-11 09:25:29
+ * @LastEditTime : 2020-02-11 13:37:44
+ * @LastEditors  : Please set LastEditors
+ * @Description: 列表元素
+ * @FilePath: \ViewUI\src\list.css
+ */
+
+
+/* 列表里每一行的容器 */
+
+.vw-list>.vw-list-item {
+    display: flex;
+    position: relative;
+    padding: .5rem 1rem;
+    font-size: .8rem;
+    background: #fff;
+    color: #333;
+    border-bottom: 1px solid #eee;
+}
+
+
+/* 列表项的图片容器 */
+
+.vw-list .item-img-wrap {
+    flex: 0 0 5rem;
+    height: 5rem;
+    margin-right: .5rem;
+    border-radius: .2rem;
+    overflow: hidden;
+}
+
+
+/* 列表项的图片 */
+
+.vw-list .item-img-wrap>.item-img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 列表项的文字区域 */
+
+.vw-list .item-content-wrap {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+/* 列表项的标题 */
+
+.vw-list .item-content-wrap>.item-title {
+    height: 2rem;
+    line-height: 1rem;
+    font-size: .8rem;
+    font-weight: normal;
+    overflow: hidden;
+    /*现文本多行的截断*/
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+
+/* 列表项的加个字段 */
+
+.vw-list .item-content-wrap>.item-price {
+    font-size: .8rem;
+    font-weight: 600;
+    color: #e0652f;
+}
+
+
+/* 列表项的描述字段 */
+
+.vw-list .item-content-wrap>.item-desc {
+    color: #999;
+    font-size: .6rem;
+}
+
+
+/* 2列列表 */
+
+.vw-list.column-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vw-list.column-2>.vw-list-item {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+
+/* 列表项的图片 */
+
+.vw-list.column-2 .item-img-wrap {
+    flex: 0 0 7rem;
+    margin-right: 0;
+}
+
+.vw-list.column-2 .item-content-wrap>.item-title {
+    font-size: .5rem;
+}
+
+.vw-list.column-2 .item-content-wrap>p {
+    margin-top: .1rem;
+}
